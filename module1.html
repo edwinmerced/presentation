@@ -22,6 +22,7 @@
   font-size: 3vw;
           font-weight: 400;
             color:white;
+          animation-delay: 0.5s;
 }
           
            h2 {
@@ -29,6 +30,7 @@
  font-weight: 400;
                 color:white;
                line-height: 1em;
+               animation-delay: 1s;
 }    
           
 h3 {
@@ -36,10 +38,12 @@ h3 {
                    font-weight: 100;
                    line-height: 1.5em;
     color:white;
+    animation-delay: 1.5s;
 }
           p{
               
                 font-size: 1vw;
+              animation-delay: 2.0s;
            
           }
           
@@ -58,8 +62,17 @@ h3 {
     display: none;
 }
 
+          .iconanim{
+              font-size: 20em;
+              font-weight: 100;
+                   line-height: 1.5em;
+    color:white;
+    animation-delay: 1.5s;
+              opacity:.25;
+              
+          }
+          
       </style>
-
   <body>
         </head>
   
@@ -130,7 +143,7 @@ h3 {
                             <div class="slide-text slide_style_left">
                                 <h1 data-animation="animated zoomInRight">Entrepreneurship: Venture Ideation</h1>
                                 <h2 data-animation="animated zoomInRight">Self-assessment and reflection</h2>
-                                
+                                <div class="iconanim"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
                             </div>
                         </div>
                     </div>
@@ -172,7 +185,7 @@ h3 {
                                 <h3 data-animation="animated fadeInLeft">&bull; Do I have the skills to be an entrepreneur?</h3>
                                 <h3 data-animation="animated fadeInLeft">&bull; What steps do I need to be successful?</h3>
                                 <h3 data-animation="animated fadeInLeft">&bull; Wnat are my interests, skills, strenghths, weaknesses, personal and professional goals?</h3>
-                                <h3 data-animation="animated fadeInLeft">&bull; What resources are available to help me strat my venture?</h3>
+                                <h3 data-animation="animated fadeInLeft">&bull; What resources are available to help me start my venture?</h3>
                                
                             </div>
                 </div>
@@ -188,7 +201,7 @@ h3 {
                     <div class="slide-text slide_style_left">
                                 <h1 data-animation="animated zoomInRight">Self-assessment and reflection</h1>
                                 <h2 data-animation="animated zoomInRight">Do I want to be an entrepreneur?</h2>
-                                <h3 data-animation="animated fadeInLeft">You should also begin to develop a <strong style="color:orange">professional network of fellow entrepreneurs</strong>, experts in related fields and service providers. This network will last the lifetime of your entrepreneurial venture. </h3>
+                        <h3 data-animation="animated fadeInLeft">You should also begin to develop a <a href="#" data-toggle="tooltip" title="Some text can go here to invite exploration, discovery and engage the learner in the presentation"><strong style="color:orange">professional network of fellow entrepreneurs</strong></a>, experts in related fields and service providers. This network will last the lifetime of your entrepreneurial venture. </h3>
                       
                             </div>
                 </div>
@@ -263,7 +276,7 @@ h3 {
                                 <h1 data-animation="animated zoomInRight">Self-assessment and reflection</h1>
                                 <h2 data-animation="animated zoomInRight">Do I want to be an entrepreneur?</h2>
                                 <br>
-                                <a href="pdfs/module1.pdf" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">Download PDF of ths presentation</a>
+                                <a href="pdfs/module1.pdf" target="_blank" class="btn btn-default" data-animation="animated fadeInLeft">Download PDF of this presentation</a>
                            
                             </div>
                 </div>
@@ -339,6 +352,13 @@ $('#bootstrap-touch-slider').bind('slid', function() {
 
 });
       
+    
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+
+    
 </script>
       
   </body>
